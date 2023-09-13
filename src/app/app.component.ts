@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-example';
+  title = 'kpad-service';
+
+  /**
+   * Get user from local storage
+   * @returns 
+   */
+  getUser(){
+    let user ="Guest";
+    // if(localStorage.getItem("user")){
+    //   user = localStorage.getItem("user");
+    // }
+    return user;
+  }
 }
